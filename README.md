@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Rikku1/ACP_FINAL_PROJECT.git">
-    <img alt="ATM SYSTEM" title="ATM SYSTEM" src="atm(1).png" width="250">
+    <img alt="ATM SYSTEM" title="ATM SYSTEM" src="atm (1).png" width="250">
   </a>
 </p>
 
