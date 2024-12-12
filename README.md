@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Rikku1/ACP_FINAL_PROJECT.git">
-    <img alt="ATM SYSTEM" title="ATM SYSTEM" src="https://github.com/YourGitHubRepo/atm.png" width="250">
+    <img alt="ATM SYSTEM" title="ATM SYSTEM" src="atm(1).png" width="250">
   </a>
 </p>
 
@@ -47,7 +47,7 @@ The project demonstrates a practical application of Python programming principle
 
 ## 🪧 Sustainable Development Goal (SDG) Integration
 <p align="center">
-  <img src="SDG_9.png" width="600">
+  <img src="SDG_9.png" width="1000">
 </p>
 
 The ATM System aligns with **SDG 9: Industry, Innovation, and Infrastructure** by promoting financial inclusion and innovation. It demonstrates the potential for digital financial services to empower users by providing access to essential tools for managing finances. By simulating core banking functionalities, the project underscores the role of technology in fostering economic growth and sustainability.
