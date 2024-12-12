@@ -9,6 +9,5 @@ class User:
         self.accountNumber = accountNumber
         self.pin = pin
         
-        # Creating an instance of CheckingAccount for the user
-        self.checking_account = CheckingAccount() 
+        self.checking_account = CheckingAccount() # Creating an instance of CheckingAccount for the user
         self.savings_account = SavingsAccount() # Creating an instance of SavingsAccount for the user

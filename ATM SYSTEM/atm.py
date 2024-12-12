@@ -24,16 +24,16 @@ class ATM:
         print(f"Account created successfully for {name} with Checking and Savings accounts!")
 
     def login(self):
-        print("=== Login ===")
-        account_number = input("Enter your 8-digit Account Number: ")
-        pin = input("Enter your 4-digit PIN: ")
+        print("=== Login ===") 
+        account_number = input("Enter your 8-digit Account Number: ") # Prompt for Account number 
+        pin = input("Enter your 4-digit PIN: ") # Prompt for pin
 
-        user = self.users.get(account_number)
-        if user and user.pin == pin:
+        user = self.users.get(account_number)  # Retrieve user information from dictionary using account number
+        if user and user.pin == pin:  # Check if user exists and PIN matches
             print("Login successful!")
-            return user
+            return user  
         else:
-            print("Invalid Account Number or PIN. Please try again.")
+            print("Invalid Account Number or PIN. Please try again.")  # Display error message
             return None
 
     def typeMenu(self, user):
@@ -45,9 +45,11 @@ class ATM:
             choice = input("Select an option: ")
 
             if choice == "1":
-                user.checking_account.menu()
+                
+                user.checking_account.menu() # Display the checking account menu
             elif choice == "2":
-                user.savings_account.menu()
+                
+                user.savings_account.menu() # Display the savings account menu
             elif choice == "3":
                 print("Logged out successfully.")
                 break
@@ -62,14 +64,19 @@ class ATM:
             print("  1. Create Account\n  2. Login\n  3. Exit")
             choice = input("Select an option: ")
 
+            # Create a new account
             if choice == "1":
                 self.createAccount()
+            # Login to an existing account
             elif choice == "2":
                 user = self.login()
+                # If login is successful, display account menu
                 if user:
                     self.typeMenu(user)
+            # Exit the ATM system
             elif choice == "3":
                 print("Thank you for using the ATM. Goodbye!")
                 break
+            # Handle invalid input
             else:
                 print("Invalid Input! Try Again.")
