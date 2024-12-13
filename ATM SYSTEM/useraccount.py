@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
- 
+
+# Define an abstract base class for UserAccount
 class UserAccount(ABC):
-    def __init__(self):
-        self._balance = 0.0
+    def __init__(self): # Initialize the UserAccount object with default values
+        self._balance = 0.0 
         self._MAXBALANCE = 10000000.0
         self._TRANSACTIONFEE = 12.0
 
@@ -48,13 +49,15 @@ class UserAccount(ABC):
 
     def accountsMenu(self): # Menu for checking and savings
         while True:
-            print("===================================")
-            print("|      ATM     |")
-            print("===================================")
+            print("****************************************************************************")
+            print("*\t\t\t\t\t\t\t\t\t   *")
+            print("*\t\t\t\t  ATM MENU\t\t\t\t   *")
+            print("*\t\t\t\t\t\t\t\t\t   *")
+            print("****************************************************************************")
             print("  1. Check Balance\n  2. Deposit\n  3. Withdraw\n  4. Back")
-            print("-----------------------------------")
-            choice = input("Select an option: ")
-            print("-----------------------------------")
+            print("****************************************************************************")
+            choice = input("  Select an option: ")
+            print("****************************************************************************")
             try: # Error handling
                 if choice == "1":
                     self.showBalance() # Display balance

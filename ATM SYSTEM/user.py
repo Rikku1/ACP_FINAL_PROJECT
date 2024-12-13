@@ -5,7 +5,6 @@ class User:
     def __init__(self, name, accountNumber, pin):
         # Initializing the user's name, account number, and PIN
         self.name = name
-        self.name = name
         self.accountNumber = accountNumber
         self.pin = pin
         
